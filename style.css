@@ -55,14 +55,21 @@ h6 {
 }
 
 :root {
-    --clr-light-grey: #f9fafb;
+    --clr-off-white: #f9fafb;
+    --clr-light-grey: #e5e7eb;
+    --clr-light-blue: #4269d7;
+    --clr-dark-blue: #1f2937;
+
+    --padding-main: 2.5rem;
+
+    --fs-md: 1.4rem;
 }
 
 body {
     display: flex;
     height: 100svh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: var(--clr-light-grey);
+    background-color: var(--clr-off-white);
 }
 
 .logo {
@@ -114,19 +121,19 @@ main {
 
 .introduction {
     width: 85ch;
-    padding: 0 2.5rem;
+    padding: 0 var(--padding-main);
     margin-bottom: 3.5rem;
 }
 
 .introduction p {
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: var(--fs-md);
 }
 
 .signup__card {
     background-color: white;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem var(--padding-main);
     padding-bottom: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -134,8 +141,8 @@ main {
 .signup__header {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #1f2937;
-    margin-bottom: 1.4rem;
+    color: var(--clr-dark-blue);
+    margin-bottom: var(--fs-md);
 }
 
 .signup__container {
@@ -157,11 +164,11 @@ main {
 .signup__field input {
     appearance: none;
     border-radius: 5px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--clr-light-grey);
     padding: 0.2rem 0.8rem;
 }
 
 .signup__field input:focus {
-    outline: 2px solid #4269d7;
+    outline: 2px solid var(--clr-light-blue);
     box-shadow: 3px 3px 5px lightgrey;
 }
