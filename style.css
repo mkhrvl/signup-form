@@ -59,6 +59,7 @@ h6 {
     --clr-light-grey: #e5e7eb;
     --clr-light-blue: #4269d7;
     --clr-dark-blue: #1f2937;
+    --clr-red: #c74a4a;
 
     --padding-main: 2.5rem;
 
@@ -168,9 +169,13 @@ main {
     padding: 0.2rem 0.8rem;
 }
 
+.signup__field input:invalid {
+    outline: 1px solid var(--clr-red);
+}
+
 .signup__field input:focus {
     box-shadow: 3px 3px 5px lightgrey;
-    outline: 2px solid var(--clr-light-blue);
+    outline: 1px solid var(--clr-light-blue);
 }
 
 .signup__btn {
