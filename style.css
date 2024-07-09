@@ -66,10 +66,10 @@ h6 {
 }
 
 body {
-    display: flex;
-    height: 100svh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--clr-off-white);
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100svh;
 }
 
 .logo {
@@ -78,11 +78,11 @@ body {
     color: white;
     display: flex;
     flex-flow: column nowrap;
+    flex: 1;
     justify-content: space-between;
+    max-width: 45vw;
     min-width: 250px;
     padding: 0.5rem 0;
-    max-width: 45vw;
-    flex: 1;
 }
 
 .logo__container {
@@ -106,8 +106,8 @@ body {
 }
 
 .attribute {
-    text-align: center;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .attribute a {
@@ -115,40 +115,40 @@ body {
 }
 
 main {
-    margin: auto 0;
     flex: 1;
+    margin: auto 0;
 }
 
 .introduction {
-    width: 85ch;
-    padding: 0 var(--padding-main);
     margin-bottom: 3.5rem;
+    padding: 0 var(--padding-main);
+    width: 85ch;
 }
 
 .introduction p {
-    font-weight: 600;
     font-size: var(--fs-md);
+    font-weight: 600;
 }
 
 .signup__card {
     background-color: white;
     box-shadow: 0px 5px 10px lightgrey;
-    padding: 1.5rem var(--padding-main);
-    padding-bottom: 2.5rem;
     margin-bottom: 2rem;
+    padding-bottom: 2.5rem;
+    padding: 1.5rem var(--padding-main);
 }
 
 .signup__header {
+    color: var(--clr-dark-blue);
     font-size: 1.4rem;
     font-weight: 600;
-    color: var(--clr-dark-blue);
     margin-bottom: var(--fs-md);
 }
 
 .signup__container {
     display: grid;
-    grid-template-columns: repeat(2, 250px);
     gap: 1rem 4rem;
+    grid-template-columns: repeat(2, 250px);
 }
 
 .signup__field {
@@ -169,20 +169,20 @@ main {
 }
 
 .signup__field input:focus {
-    outline: 2px solid var(--clr-light-blue);
     box-shadow: 3px 3px 5px lightgrey;
+    outline: 2px solid var(--clr-light-blue);
 }
 
 .signup__btn {
-    margin-left: var(--padding-main);
-    margin-bottom: 1.5rem;
-    padding: 0.7em 3.2em;
+    background-color: var(--clr-dark-blue);
     border-radius: 8px;
     border: none;
-    background-color: var(--clr-dark-blue);
+    box-shadow: 3px 3px 5px lightgrey;
     color: white;
     font-weight: 600;
-    box-shadow: 3px 3px 5px lightgrey;
+    margin-bottom: 1.5rem;
+    margin-left: var(--padding-main);
+    padding: 0.7em 3.2em;
 }
 
 .login {
@@ -190,7 +190,7 @@ main {
 }
 
 .login a {
-    text-decoration: none;
-    font-weight: 600;
     color: var(--clr-dark-blue);
+    font-weight: 600;
+    text-decoration: none;
 }
