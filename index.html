@@ -6,5 +6,75 @@
         <title>Sign-up Form</title>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body></body>
+    <body>
+        <aside class="logo">
+            <div class="logo__container">
+                <img class="logo__img" src="images/odin-logo.png" alt="The Odin Project Logo" />
+                <h1 class="logo__header">ODIN</h1>
+            </div>
+            <div class="attribute">
+                <p>
+                    Photo by
+                    <a
+                        href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    >
+                        Pawel Czerwinski
+                    </a>
+                    on
+                    <a
+                        href="https://unsplash.com/photos/water-splash-in-close-up-photography-BPrk2cOoCq8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    >
+                        Unsplash
+                    </a>
+                </p>
+            </div>
+        </aside>
+
+        <main>
+            <section class="introduction">
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up <em>now</em> to get started. You <em>know</em> you want to.
+                </p>
+            </section>
+
+            <section class="signup">
+                <p class="signup__header">Let's do this!</p>
+                <form method="">
+                    <div class="signup__container">
+                        <div class="signup__field">
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" id="fname" name="fname" />
+                        </div>
+                        <div class="signup__field">
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" id="lname" name="lname" />
+                        </div>
+                        <div class="signup__field">
+                            <label for="email">EMAIL</label>
+                            <input type="text" id="email" name="email" />
+                        </div>
+                        <div class="signup__field">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="text" id="phone" name="phone" />
+                        </div>
+                        <div class="signup__field">
+                            <label for="password">PASSWORD</label>
+                            <input type="text" id="password" name="password" />
+                        </div>
+                        <div class="signup__field">
+                            <label for="conf-password">CONFIRM PASSWORD</label>
+                            <input type="text" id="conf-password" name="conf-password" />
+                        </div>
+                    </div>
+
+                    <button class="signup__btn">Create Account</button>
+                </form>
+            </section>
+
+            <section class="login">
+                <p>Already have an account? <a href="" class="login__link">Log in</a></p>
+            </section>
+        </main>
+    </body>
 </html>
