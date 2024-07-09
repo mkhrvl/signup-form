@@ -1,0 +1,102 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('fonts/Norse-Bold.otf');
+    src: url('fonts/norse-bold-webfont.woff') format('woff'), url('fonts/norse-bold-webfont.woff2') format('woff2');
+}
+
+body {
+    display: flex;
+    height: 100svh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+    align-items: center;
+    background-image: url(images/bg.jpg);
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    min-width: 250px;
+    padding: 0.5rem 0;
+    width: 40vw;
+}
+
+.logo__container {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    margin-top: 12rem;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.logo__img {
+    max-height: 100%;
+}
+
+.logo__header {
+    font-family: 'Norse Bold';
+    font-size: 5rem;
+}
+
+.attribute {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.attribute a {
+    color: white;
+}
