@@ -172,3 +172,25 @@ main {
     outline: 2px solid var(--clr-light-blue);
     box-shadow: 3px 3px 5px lightgrey;
 }
+
+.signup__btn {
+    margin-left: var(--padding-main);
+    margin-bottom: 1.5rem;
+    padding: 0.7em 3.2em;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--clr-dark-blue);
+    color: white;
+    font-weight: 600;
+    box-shadow: 3px 3px 5px lightgrey;
+}
+
+.login {
+    margin-left: var(--padding-main);
+}
+
+.login a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-dark-blue);
+}
